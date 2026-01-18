@@ -88,6 +88,8 @@ my email gweh : _blom ngisi tehe_
     <br>
 Lalu yaw adalah gerak rotasi terhadap sumbu Z dan roll adalah gerak rotasi terhadap sumbu X. \
 Dilanjutkan dengan perbedaan airspeed dan groundspeed, groundspeed adalah kecepatan pesawat relatif terhadap permukaan bumi dan airspeed adalah kecepatan pesawat relatif terhadap udara. Groundspeed merupakan hasil penjumlahan dari airspeed dan kecepatan angin. \
+Dalam GPS (Global Positioning System) HDOP (Horizontal Dillution Of Precision) digunakan sebagai alat pengukur keakuratan GPS. Dan RSSI adalah indikator yang digunakan untuk mengukur daya/kekuatan dari sinyal radio yang diterima oleh device.
+
 
 
 * References: 
@@ -95,4 +97,6 @@ Dilanjutkan dengan perbedaan airspeed dan groundspeed, groundspeed adalah kecepa
   * [UNMANNED AERIAL VEHICLES: FUNDAMENTALS, COMPONENTS,
 MECHANICS, AND REGULATIONS](https://novapublishers.com/wp-content/uploads/2020/10/Unmanned-Aerial-Vehicles.pdf)
    * [Pitch, yaw, and roll](https://simple.wikipedia.org/wiki/Pitch,_yaw,_and_roll)
-  * [airspeed vs groundspeed](https://science.howstuffworks.com/transport/flight/modern/airspeed-vs-groundspeed.htm)
+  * [Airspeed vs Groundspeed](https://science.howstuffworks.com/transport/flight/modern/airspeed-vs-groundspeed.htm)
+  * [Dilution of precision](https://en.wikipedia.org/wiki/Dilution_of_precision)
+  * [What is RSSI](https://www.virginmedia.com/the-edit/glossary/what-is-rssi)
