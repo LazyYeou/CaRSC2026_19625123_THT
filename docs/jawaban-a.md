@@ -19,15 +19,18 @@ my email gweh : _blom ngisi tehe_
     * [**Referensi Git Commands**](https://git-scm.com/docs/git#_git_commands) 
     <br>
 * b. Integrate git dan vscode dengan github
+    <br>
     <img src="../src/a/2/2-b.png" alt="Integrasi local git dan github" width="300"/> 
     <br>
     
 * c. Min aku beneran udah kerjain kok...
     **Reaksi atmin**:
+    <br>
     <img src="../src/etc/mana-bukti.png" alt="mana-buktinya" width="200"/> 
     <br>
 
     **Gweh bilek**: Ini buktinya ✋😛🤚 
+    <br>
     <img src="../src/a/2/2-c1.png" alt="2-c1" width="400"/> 
     <img src="../src/a/2/2-c2.png" alt="2-c2" width="400"/> 
     <br>
@@ -36,9 +39,10 @@ my email gweh : _blom ngisi tehe_
 
 ### 3. **Pengenalan Ground Control Station**
 * a. Tangkapan layar utama _Mission Planer_
+    <br>
     <img src="../src/a/3/3-a.png" alt="Layar Utama Mission Planner" width="360">
     <br>
 * b. Main features Mission Planner:
-    * Code 
+    * ** 
 * c. [File](../src/a/3/mission.waypoints)
 
