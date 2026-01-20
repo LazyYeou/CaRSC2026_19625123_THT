@@ -118,5 +118,42 @@
         * Referensi
             * [OOP in C++](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/) 
             * [C++ reference](https://en.cppreference.com/w/cpp.html)
-    2.
-2.  
+    2. 
+2.  1. `#include` merupakan *preprocessor directive* atau perintah kepada *preprocessor* untuk menyalin file lain ke dalam *source code* sebelum di-*compile*. Ketika menggunakan `#include <filename>` compiler mencari file di standard library atau library bawaan c++, seperti `<iostream>`, `<string>`, `vector`, dll. Sedangkan `#include "filename"` compiler mencari file di dalam direktori projek saat ini. Jika tidak ditemukan maka pencarian akan dilakukan di directory standard library. Biasa digunakan untuk memanggil customized header (header yang dibuat sendiri), seperti `myHeader.h`.
+    1. `#ifdef` merupakan directives yang mengizinkan kompilasi kode yang ada dalam blok jika macro yang digunakan sebagai parameter telah di-define dan `#endif` berfungsi sebagai penutup blok. 
+    ```cpp
+        #ifdef PI
+            std::cout << "Macro PI sudah di define" << std::endl;
+        #endif
+    ```
+    `#ifndef` merupakan kebalikan dari `#ifdef`, directive ini berfungsi untuk mengecek apakah macro yang digunakan sebagai parameter telah di-define atau belum. Jika belum di-define maka kode yang ada dalam blok akan dijalankan.
+    ```cpp
+        #ifndef PI
+            std::cout << "Macro PI blum di define" << std::endl;
+        #endif
+    ```
+    `#pragma once` adalah directive yang berfungsi untuk menentukan bahwa file header hanya akan diproses sekali saat proses compilation. \
+    3.  `namespace` digunakan untuk pengelompokkan kode (variable, fungsi, class) agar tidak terjadi collision pada penamaan. Jika diibaratkan ini seperti folder, jika kita punya file test.jpg dalam folder A dan B komputer tidak akan bingung untuk mengakses keduanya karena memiliki path yang berbeda. `::` adalah Scope Resolution Operator, digunakan mengakses isi dari namespace tersebut.
+    ```cpp
+        namespace FirstFoo {
+            void call() {}
+        }
+
+        namespace SecondFoo {
+            void call() {}
+        }
+
+        int main(){
+            FirstFoo::call();
+            SecondFoo::call();
+
+            return 0;
+        }
+    ``` 
+    4. 
+
+
+    Referensi: 
+    * [Preprocessor and preprocessor directives](https://www.geeksforgeeks.org/cpp/cpp-preprocessors-and-directives/)
+    * [Preprocessor directives](https://cplusplus.com/doc/tutorial/preprocessor/)
+    * [Preprocessor](https://learn.microsoft.com/id-id/cpp/preprocessor/once?view=msvc-170)
