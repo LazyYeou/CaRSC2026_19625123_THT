@@ -150,10 +150,95 @@
             return 0;
         }
     ``` 
-    4. 
+    4. Beda dari `#define` dengan `using`, pada directive `#define` compiler akan mengganti macro yang didefinisika, hal ini dapat memicu error karena tidak ada pengeceka tipe data. Sedangkan `using` digunakan untuk mendefinisika typedef alias. Jika menggunakan `#define` contohnya seperti kode berikut:
+    ```cpp
+    #define LL long long
+
+    void func1(LL value); //aman
+    void func2(char LL); //error rek, compiler ngeliatnya void func2(char long long)
+    
+    ``` 
+    Ketika menggunakan `using`:
+    ```cpp
+    using LL long long;
+
+    void func1(LL value); //aman, compiler ngebaca func1(long long value)
+    void func2(char LL); //aman juga, compiler ngebaca sebagai func2(char LL)
+    ```
+    5. Address merupakan alamat memori yang ditempati oleh sebuah variabel, dan pointe adalah variable yang menyimpan alamat memori. Berikut adalah contoh penggunaannya:
+    ```cpp
+    int x = 10; //misal alamat dari x adalah 0x7ff7
+    int *ptr = &x //ptr adalah pointer yang menyimpan alamat dari variabel x
+    ``` 
+    6. Pass by value merupakan proses ketika sebuah argumen dimasukkan ke dalam fungsi tetapi argumen yang diteruskan bukanlah nilai asli tapi merupakan salinan. Contoh sebagai berikut:
+    ```cpp
+        int main(){
+            void modif(int x) {
+                x += 10;
+            }
+        int x = 10; 
+        modify(x) //fungsi pass by value
+        std::cout << x << std::endl; //nilai x tetap 10
+        }
+    ``` 
+    Pass by reference sendiri adlaah proses ketika argumen dimasukkan ke dalam fungsi dan argumen yang diproses merupakan alamat memori sebuah variabel.
+    ```cpp
+        int main(){
+            void modif(int &x) {
+                x += 10;
+            }
+        int x = 10; 
+        modify(x) //fungsi pass by refernce
+        std::cout << x << std::endl; //nilai x berubah menjadi 20 
+        }
+    ``` 
+    7. Unique pointer merupakan smart pointer yang digunakan untuk mengelola kepimilikan ekskludif atas satu objek (hanya ada satu unique pointer yang dapat memiliki objeck dalam satu waktu). Berikut contoh aplikasinya:
+    ```cpp
+    #include <iostream>
+    #include <memory> 
+
+    class MyClass {
+    public:
+        MyClass() { std::cout << "MyClass constructed\n"; }
+        ~MyClass() { std::cout << "MyClass destructed\n"; }
+    };
+
+    int main() {
+        std::unique_ptr<MyClass> ptr1 = std::make_unique<MyClass>();  // unique_ptr
+        // std::unique_ptr<MyClass> ptr2 = ptr1; // error: tidak bisa menyalin unique_ptr
+        std::unique_ptr<MyClass> ptr2 = std::move(ptr1);  // memindahkan kepemilikan
+        return 0;
+    }
+    ```
+
+    Shared pointer adlaah smart pointer yang memungkinkan lebih dari satu pointer memiliki objek yang sama. Objek akan tetap ada selama ada satu pointer yang mengarah kepadanya, jika tidak objek akan dihancurkan. Contoh aplikasi:
+    ```cpp
+    #include <iostream>
+    #include <memory> 
+
+    class MyClass {
+    public:
+        MyClass() { std::cout << "MyClass constructed\n"; }
+        ~MyClass() { std::cout << "MyClass destructed\n"; }
+    };
+
+    int main() {
+        std::shared_ptr<MyClass> ptr1 = std::make_shared<MyClass>();  // membuat shared_ptr
+        {
+            std::shared_ptr<MyClass> ptr2 = ptr1;  // ptr2 berbagi kepemilikan dengan ptr1
+            std::cout << "Inside inner scope\n";
+        }  // ptr2 keluar dari scope tapi ptr1 tetap ada, objek masih ada
+
+        std::cout << "Back to main scope\n";
+        return 0;
+    }
+
+    ```  
+    
 
 
     Referensi: 
     * [Preprocessor and preprocessor directives](https://www.geeksforgeeks.org/cpp/cpp-preprocessors-and-directives/)
     * [Preprocessor directives](https://cplusplus.com/doc/tutorial/preprocessor/)
     * [Preprocessor](https://learn.microsoft.com/id-id/cpp/preprocessor/once?view=msvc-170)
+    * [#Define vs using](https://stackoverflow.com/questions/75367096/is-there-a-difference-between-using-and-define-when-declaring-a-type-alias)
