@@ -240,7 +240,7 @@
     * [#Define vs using](https://stackoverflow.com/questions/75367096/is-there-a-difference-between-using-and-define-when-declaring-a-type-alias)
     * [auto_ptr vs unique_ptr vs shared_ptr vs weak_ptr in C++](https://www.geeksforgeeks.org/cpp/auto_ptr-unique_ptr-shared_ptr-weak_ptr-in-cpp/)
 
-3. Multithreading
+3. **Multithreading**
     1. **multitreading**: Kemampuan program untuk menjalankan bagian kode(thread) secara bersamaan atau paralel. Dalam multithreading terdapat beberapa konsep, yaitu:
         * **Thread**: Unit terkecil yang dieksekusi oleh program
         * **Deadlock**: Keadaan ketika dua thread aau lebih saling menunggu untuk melepas shared resource yang thread lain pegang.
@@ -253,3 +253,4 @@
     Referensi: 
        * [Multithread in cpp](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
        * [Multithread reference](https://cplusplus.com/reference/multithreading/)
+4. 
