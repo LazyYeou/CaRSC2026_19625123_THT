@@ -165,7 +165,7 @@
     void func1(LL value); //aman, compiler ngebaca func1(long long value)
     void func2(char LL); //aman juga, compiler ngebaca sebagai func2(char LL)
     ```
-    5. Address merupakan alamat memori yang ditempati oleh sebuah variabel, dan pointe adalah variable yang menyimpan alamat memori. Berikut adalah contoh penggunaannya:
+    5. **Address** merupakan alamat memori yang ditempati oleh sebuah variabel, dan **pointer** adalah variable yang menyimpan alamat memori. Berikut adalah contoh penggunaannya:
     ```cpp
     int x = 10; //misal alamat dari x adalah 0x7ff7
     int *ptr = &x //ptr adalah pointer yang menyimpan alamat dari variabel x
@@ -181,7 +181,7 @@
         std::cout << x << std::endl; //nilai x tetap 10
         }
     ``` 
-    Pass by reference sendiri adlaah proses ketika argumen dimasukkan ke dalam fungsi dan argumen yang diproses merupakan alamat memori sebuah variabel.
+    **Pass by reference** sendiri adlaah proses ketika argumen dimasukkan ke dalam fungsi dan argumen yang diproses merupakan alamat memori sebuah variabel.
     ```cpp
         int main(){
             void modif(int &x) {
@@ -192,7 +192,7 @@
         std::cout << x << std::endl; //nilai x berubah menjadi 20 
         }
     ``` 
-    7. Unique pointer merupakan smart pointer yang digunakan untuk mengelola kepimilikan ekskludif atas satu objek (hanya ada satu unique pointer yang dapat memiliki objeck dalam satu waktu). Berikut contoh aplikasinya:
+    7. **Unique pointer** merupakan smart pointer yang digunakan untuk mengelola kepimilikan ekskludif atas satu objek (hanya ada satu **unique pointer** yang dapat memiliki objeck dalam satu waktu). Berikut contoh aplikasinya:
     ```cpp
     #include <iostream>
     #include <memory> 
@@ -211,7 +211,7 @@
     }
     ```
 
-    Shared pointer adlaah smart pointer yang memungkinkan lebih dari satu pointer memiliki objek yang sama. Objek akan tetap ada selama ada satu pointer yang mengarah kepadanya, jika tidak objek akan dihancurkan. Contoh aplikasi:
+    **Shared pointer** adlaah smart pointer yang memungkinkan lebih dari satu pointer memiliki objek yang sama. Objek akan tetap ada selama ada satu pointer yang mengarah kepadanya, jika tidak objek akan dihancurkan. Contoh aplikasi:
     ```cpp
     #include <iostream>
     #include <memory> 
@@ -232,13 +232,24 @@
         std::cout << "Back to main scope\n";
         return 0;
     }
-
-    ```  
-    
-
-
+    ```
     Referensi: 
     * [Preprocessor and preprocessor directives](https://www.geeksforgeeks.org/cpp/cpp-preprocessors-and-directives/)
     * [Preprocessor directives](https://cplusplus.com/doc/tutorial/preprocessor/)
     * [Preprocessor](https://learn.microsoft.com/id-id/cpp/preprocessor/once?view=msvc-170)
     * [#Define vs using](https://stackoverflow.com/questions/75367096/is-there-a-difference-between-using-and-define-when-declaring-a-type-alias)
+    * [auto_ptr vs unique_ptr vs shared_ptr vs weak_ptr in C++](https://www.geeksforgeeks.org/cpp/auto_ptr-unique_ptr-shared_ptr-weak_ptr-in-cpp/)
+
+3. Multithreading
+    1. **multitreading**: Kemampuan program untuk menjalankan bagian kode(thread) secara bersamaan atau paralel. Dalam multithreading terdapat beberapa konsep, yaitu:
+        * **Thread**: Unit terkecil yang dieksekusi oleh program
+        * **Deadlock**: Keadaan ketika dua thread aau lebih saling menunggu untuk melepas shared resource yang thread lain pegang.
+        * **Race condition**: Kondisi ketika dua thread atau lebih mengakses resource yang sama, karena thread saling berlomba untuk membaca dan mengubah data maka hasil akhir dari shared data akan tak terprediksi.
+        * **Starvation**: Kondisi ketika suatu thread tidak dapat mengakses shared resource karena thread lain mendapat prioritas lebih.
+    2. [Source Code](../src/b/daspro/thread.cpp) \
+    Lampiran Output: \
+    <img src="../src/b/daspro/thread.png" width="300"> 
+    <br>
+    Referensi: 
+       * [Multithread in cpp](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+       * [Multithread reference](https://cplusplus.com/reference/multithreading/)
