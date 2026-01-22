@@ -2,7 +2,9 @@
 ### Ridu | 19625123
 
 ### DASPRO
-1. 1. * **Class** dalam OOP bertindak sebagai blueprint dari sebuah objek. Dengan adanya class kita dapat membuat objek dengan sifat yang sama dalam jumlah banyak.
+1.  **OOP**
+    1. * **Class** dalam OOP bertindak sebagai blueprint dari sebuah objek. Dengan adanya class kita dapat membuat objek dengan sifat yang sama dalam jumlah banyak.
+
         ```cpp
          //Class untuk hewan anjing
          class Cat {
@@ -15,7 +17,9 @@
              }
          };
         ```
+
         * **Objek** adalah bentuk nyata dari **class**
+
          ```cpp
         class Cat {
         private:
@@ -44,7 +48,9 @@
             cat1.meow();
         }
         ```
+
         * **Abstraction** adalah konsep menghilangkan proses yang rumit dan hanya menampilkan   fitur esensial / inti. Aplikasinya dalam c++ adalah berupa abstract classes
+
         ```cpp
         class Kendaraan {
         public: 
@@ -60,7 +66,9 @@
             } 
         };
         ```
+
         * **Encapsulation** merupakan proses membungkus data dan method kedalam sebuah unit     biasanya berupa class untuk mencegah data diakses dari luar unit tersebut.
+
         ```cpp
         class Kendaraan {
         private:
@@ -75,7 +83,9 @@
             }
         };
         ```
+
         * **Inheritance** merupakan konsep penurunan data dan method dari kelas satu kelas ke   kelas lainnya. Dalam terminologinya kelas yang menurunkan fiturnya disebut parent class atau superclass dan class yang mewarisi fitur disebut children class atau subclass. 
+
         ```cpp
         //parent class
         class Hewan {
@@ -93,7 +103,9 @@
             }
         };
         ```
-        * **Polymorphism** merupakan konsep dimana sebuah fungsi dapat memiliki behaviour yang berbeda tergantung dengan objek yang menerimannya
+
+        * **Polymorphism** merupakan konsep dimana sebuah fungsi dapat memiliki behaviour yang berbeda tergantung dengan objek yang menerimannya.
+        
         ```cpp 
         class Kendaraan {
         public: 
@@ -116,10 +128,11 @@
             } 
         };
         ```
+
         * Referensi
             * [OOP in C++](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/) 
             * [C++ reference](https://en.cppreference.com/w/cpp.html)
-    2. 
+    2. NULL
 2.  1. `#include` merupakan *preprocessor directive* atau perintah kepada *preprocessor* untuk menyalin file lain ke dalam *source code* sebelum di-*compile*. Ketika menggunakan `#include <filename>` compiler mencari file di standard library atau library bawaan c++, seperti `<iostream>`, `<string>`, `vector`, dll. Sedangkan `#include "filename"` compiler mencari file di dalam direktori projek saat ini. Jika tidak ditemukan maka pencarian akan dilakukan di directory standard library. Biasa digunakan untuk memanggil customized header (header yang dibuat sendiri), seperti `myHeader.h`.
     1. `#ifdef` merupakan directives yang mengizinkan kompilasi kode yang ada dalam blok jika macro yang digunakan sebagai parameter telah di-define dan `#endif` berfungsi sebagai penutup blok. 
     ```cpp
@@ -134,7 +147,7 @@
         #endif
     ```
     `#pragma once` adalah directive yang berfungsi untuk menentukan bahwa file header hanya akan diproses sekali saat proses compilation. \
-    3.  `namespace` digunakan untuk pengelompokkan kode (variable, fungsi, class) agar tidak terjadi collision pada penamaan. Jika diibaratkan ini seperti folder, jika kita punya file test.jpg dalam folder A dan B komputer tidak akan bingung untuk mengakses keduanya karena memiliki path yang berbeda. `::` adalah Scope Resolution Operator, digunakan mengakses isi dari namespace tersebut.
+    2.  `namespace` digunakan untuk pengelompokkan kode (variable, fungsi, class) agar tidak terjadi collision pada penamaan. Jika diibaratkan ini seperti folder, jika kita punya file test.jpg dalam folder A dan B komputer tidak akan bingung untuk mengakses keduanya karena memiliki path yang berbeda. `::` adalah Scope Resolution Operator, digunakan mengakses isi dari namespace tersebut.
     ```cpp
         namespace FirstFoo {
             void call() {}
@@ -151,7 +164,7 @@
             return 0;
         }
     ``` 
-    4. Beda dari `#define` dengan `using`, pada directive `#define` compiler akan mengganti macro yang didefinisika, hal ini dapat memicu error karena tidak ada pengeceka tipe data. Sedangkan `using` digunakan untuk mendefinisika typedef alias. Jika menggunakan `#define` contohnya seperti kode berikut:
+    3. Beda dari `#define` dengan `using`, pada directive `#define` compiler akan mengganti macro yang didefinisika, hal ini dapat memicu error karena tidak ada pengeceka tipe data. Sedangkan `using` digunakan untuk mendefinisika typedef alias. Jika menggunakan `#define` contohnya seperti kode berikut:
     ```cpp
     #define LL long long
 
@@ -166,12 +179,12 @@
     void func1(LL value); //aman, compiler ngebaca func1(long long value)
     void func2(char LL); //aman juga, compiler ngebaca sebagai func2(char LL)
     ```
-    5. **Address** merupakan alamat memori yang ditempati oleh sebuah variabel, dan **pointer** adalah variable yang menyimpan alamat memori. Berikut adalah contoh penggunaannya:
+    4. **Address** merupakan alamat memori yang ditempati oleh sebuah variabel, dan **pointer** adalah variable yang menyimpan alamat memori. Berikut adalah contoh penggunaannya:
     ```cpp
     int x = 10; //misal alamat dari x adalah 0x7ff7
     int *ptr = &x //ptr adalah pointer yang menyimpan alamat dari variabel x
     ``` 
-    6. Pass by value merupakan proses ketika sebuah argumen dimasukkan ke dalam fungsi tetapi argumen yang diteruskan bukanlah nilai asli tapi merupakan salinan. Contoh sebagai berikut:
+    5. Pass by value merupakan proses ketika sebuah argumen dimasukkan ke dalam fungsi tetapi argumen yang diteruskan bukanlah nilai asli tapi merupakan salinan. Contoh sebagai berikut:
     ```cpp
         int main(){
             void modif(int x) {
@@ -193,7 +206,7 @@
         std::cout << x << std::endl; //nilai x berubah menjadi 20 
         }
     ``` 
-    7. **Unique pointer** merupakan smart pointer yang digunakan untuk mengelola kepimilikan ekskludif atas satu objek (hanya ada satu **unique pointer** yang dapat memiliki objeck dalam satu waktu). Berikut contoh aplikasinya:
+    6. **Unique pointer** merupakan smart pointer yang digunakan untuk mengelola kepimilikan ekskludif atas satu objek (hanya ada satu **unique pointer** yang dapat memiliki objeck dalam satu waktu). Berikut contoh aplikasinya:
     ```cpp
     #include <iostream>
     #include <memory> 
@@ -242,7 +255,7 @@
     * [auto_ptr vs unique_ptr vs shared_ptr vs weak_ptr in C++](https://www.geeksforgeeks.org/cpp/auto_ptr-unique_ptr-shared_ptr-weak_ptr-in-cpp/)
 
 3. **Multithreading**
-    1. **multitreading**: Kemampuan program untuk menjalankan bagian kode(thread) secara bersamaan atau paralel. Dalam multithreading terdapat beberapa konsep, yaitu:
+    1. **Multitreading** adalah Kemampuan program untuk menjalankan bagian kode(thread) secara bersamaan atau paralel. Dalam multithreading terdapat beberapa konsep, yaitu:
         * **Thread**: Unit terkecil yang dieksekusi oleh program
         * **Deadlock**: Keadaan ketika dua thread aau lebih saling menunggu untuk melepas shared resource yang thread lain pegang.
         * **Race condition**: Kondisi ketika dua thread atau lebih mengakses resource yang sama, karena thread saling berlomba untuk membaca dan mengubah data maka hasil akhir dari shared data akan tak terprediksi.
