@@ -1,4 +1,4 @@
-## Bagian B
+## Solusi Bagian B
 ### Ridu | 19625123
 
 ### DASPRO
@@ -128,10 +128,6 @@
             } 
         };
         ```
-
-        * Referensi
-            * [OOP in C++](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/) 
-            * [C++ reference](https://en.cppreference.com/w/cpp.html)
     2. NULL
 2.  1. `#include` merupakan *preprocessor directive* atau perintah kepada *preprocessor* untuk menyalin file lain ke dalam *source code* sebelum di-*compile*. Ketika menggunakan `#include <filename>` compiler mencari file di standard library atau library bawaan c++, seperti `<iostream>`, `<string>`, `vector`, dll. Sedangkan `#include "filename"` compiler mencari file di dalam direktori projek saat ini. Jika tidak ditemukan maka pencarian akan dilakukan di directory standard library. Biasa digunakan untuk memanggil customized header (header yang dibuat sendiri), seperti `myHeader.h`.
     1. `#ifdef` merupakan directives yang mengizinkan kompilasi kode yang ada dalam blok jika macro yang digunakan sebagai parameter telah di-define dan `#endif` berfungsi sebagai penutup blok. 
@@ -247,12 +243,7 @@
         return 0;
     }
     ```
-    Referensi: 
-    * [Preprocessor and preprocessor directives](https://www.geeksforgeeks.org/cpp/cpp-preprocessors-and-directives/)
-    * [Preprocessor directives](https://cplusplus.com/doc/tutorial/preprocessor/)
-    * [Preprocessor](https://learn.microsoft.com/id-id/cpp/preprocessor/once?view=msvc-170)
-    * [#Define vs using](https://stackoverflow.com/questions/75367096/is-there-a-difference-between-using-and-define-when-declaring-a-type-alias)
-    * [auto_ptr vs unique_ptr vs shared_ptr vs weak_ptr in C++](https://www.geeksforgeeks.org/cpp/auto_ptr-unique_ptr-shared_ptr-weak_ptr-in-cpp/)
+  
 
 3. **Multithreading**
     1. **Multitreading** adalah Kemampuan program untuk menjalankan bagian kode(thread) secara bersamaan atau paralel. Dalam multithreading terdapat beberapa konsep, yaitu:
@@ -262,28 +253,44 @@
         * **Starvation**: Kondisi ketika suatu thread tidak dapat mengakses shared resource karena thread lain mendapat prioritas lebih.
     2. [Source Code](../src/b/daspro/thread.cpp) \
     Lampiran Output: \
-    <img src="../src/b/daspro/thread.png" width="300"> 
-    <br>
-    Referensi: 
-       * [Multithread in cpp](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
-       * [Multithread reference](https://cplusplus.com/reference/multithreading/)
+    <img src="../src/b/daspro/thread.png" width="300">   
 
+---
 
 ### Jurusan Control and Perception (ConCept)
 1. ... 
 2. ... 
 3. ...
 4. ...
-5. Transformasi gambar dengan OpenCV C++ \
-    Image sebelum before: \
+5. **Transformasi image dengan OpenCV C++** \
+    Image sebelum before:
+
     <img src="../src/b/concept/b-5/kapan_yh.jpeg" width="200"> 
     <br>
-    Image setelah after: \
+
+    Image setelah after: 
+
     <img src="../src/b/concept/b-5/kapan_yh_transformed.jpg" width="200"> 
     <br>
-    [Source Code](../src/b/concept/b-5/display_image.cpp)
-6. Tracking Object \
-   [Source Code](../src/b/concept/b-6/circle.cpp) \
-   [Output Video](../src/b/concept/b-6/output.avi) 
 
+    [Source Code Transformasi Image](../src/b/concept/b-5/display_image.cpp)
+6. Tracking Object \
+   [Source Code Tracking Object](../src/b/concept/b-6/circle.cpp) \
+   [Output Video Tracking](../src/b/concept/b-6/output.avi) 
+
+### Referensi
+
+#### Daspro
+* [Preprocessor and preprocessor directives](https://www.geeksforgeeks.org/cpp/cpp-preprocessors-and-directives/)
+* [Preprocessor directives](https://cplusplus.com/doc/tutorial/preprocessor/)
+* [Preprocessor](https://learn.microsoft.com/id-id/cpp/preprocessor/once?view=msvc-170)
+* [#Define vs using](https://stackoverflow.com/questions/75367096/is-there-a-difference-between-using-and-define-when-declaring-a-type-alias)
+* [auto_ptr vs unique_ptr vs shared_ptr vs weak_ptr in C++](https://www.geeksforgeeks.org/cpp/auto_ptr-unique_ptr-shared_ptr-weak_ptr-in-cpp/)
+* [Multithread in cpp](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
+* [Multithread reference](https://cplusplus.com/reference/multithreading/)
+* [OOP in C++](https://www.geeksforgeeks.org/cpp/object-oriented-programming-in-cpp/) 
+* [C++ reference](https://en.cppreference.com/w/cpp.html)
+
+#### Concept
+* [OpenCV 4.12 Docs](https://docs.opencv.org/4.12.0/)
 
