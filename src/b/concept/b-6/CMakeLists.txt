@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.5)
+project( Circle )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( Circle circle.cpp )
+target_link_libraries( Circle ${OpenCV_LIBS} )

@@ -4,25 +4,30 @@
 #include <string>
 #include <sstream>
 
-struct TelemetryData {
+struct TelemetryData
+{
     float altitude;
     float speed;
     float battery;
 };
 
-void process_telemetry(const std::string& filename) {
+void process_telemetry(const std::string &filename)
+{
     std::ifstream file(filename);
-    if (!file.is_open()) {
+    if (!file.is_open())
+    {
         std::cerr << "error membuka " << filename << std::endl;
         return;
     }
 
     std::vector<TelemetryData> data_list;
     std::string line;
-    while (std::getline(file, line)) {
+    while (std::getline(file, line))
+    {
         std::istringstream iss(line);
         TelemetryData data;
-        if (iss >> data.altitude >> data.speed >> data.battery) {
+        if (iss >> data.altitude >> data.speed >> data.battery)
+        {
             data_list.push_back(data);
         }
     }
@@ -33,15 +38,18 @@ void process_telemetry(const std::string& filename) {
     float total_battery = 0.0f;
     int count = data_list.size();
 
-    for (const auto& data : data_list) {
+    for (const auto &data : data_list)
+    {
         total_altitude += data.altitude;
         total_speed += data.speed;
         total_battery += data.battery;
 
-        if (data.battery < 20.0f) {
+        if (data.battery < 20.0f)
+        {
             std::cout << "Low battery alert: " << data.battery << "%" << std::endl;
         }
-        if (data.altitude > 100.0f) {
+        if (data.altitude > 100.0f)
+        {
             std::cout << "High altitude alert: " << data.altitude << "m" << std::endl;
         }
     }
@@ -55,7 +63,8 @@ void process_telemetry(const std::string& filename) {
     std::cout << "avg battery: " << avg_battery << "%" << std::endl;
 }
 
-int main() {
+int main()
+{
     process_telemetry("lampiran/telemetry_data.txt");
     return 0;
 }
