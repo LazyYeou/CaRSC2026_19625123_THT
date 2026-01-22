@@ -1,4 +1,5 @@
 ## Bagian B
+### Ridu | 19625123
 
 ### DASPRO
 1. 1. * **Class** dalam OOP bertindak sebagai blueprint dari sebuah objek. Dengan adanya class kita dapat membuat objek dengan sifat yang sama dalam jumlah banyak.
@@ -253,4 +254,23 @@
     Referensi: 
        * [Multithread in cpp](https://www.geeksforgeeks.org/cpp/multithreading-in-cpp/)
        * [Multithread reference](https://cplusplus.com/reference/multithreading/)
-4. 
+
+
+### Jurusan Control and Perception (ConCept)
+1. ... 
+2. ... 
+3. ...
+4. ...
+5. Transformasi gambar dengan OpenCV C++ \
+    Image sebelum before: \
+    <img src="../src/b/concept/b-5/kapan_yh.jpeg" width="200"> 
+    <br>
+    Image setelah after: \
+    <img src="../src/b/concept/b-5/kapan_yh_transformed.jpg" width="200"> 
+    <br>
+    [Source Code](../src/b/concept/b-5/display_image.cpp)
+6. Tracking Object \
+   [Source Code](../src/b/concept/b-6/circle.cpp) \
+   [Output Video](../src/b/concept/b-6/output.avi) 
+
+
