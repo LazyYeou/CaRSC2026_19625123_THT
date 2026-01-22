@@ -263,12 +263,12 @@
 3. ...
 4. ...
 5. **Transformasi image dengan OpenCV C++** \
-    Image sebelum before:
+    Image sebelum transformasi:
 
     <img src="../src/b/concept/b-5/kapan_yh.jpeg" width="200"> 
     <br>
 
-    Image setelah after: 
+    Image setelah transformasi: 
 
     <img src="../src/b/concept/b-5/kapan_yh_transformed.jpg" width="200"> 
     <br>

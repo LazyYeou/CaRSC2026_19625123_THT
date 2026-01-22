@@ -35,14 +35,6 @@
 <br>
 
 #### c. **Git**
-Gweh: Min aku beneran udah kerjain kok...
-
-Reaksi atmin:  
-<br>
-<img src="../src/etc/mana-bukti.png" alt="mana-buktinya" width="200" />  
-<br>
-
-Gweh bilek: Ini buktinya ✋😛🤚  
 <br>
 <img src="../src/a/2/2-c1.png" alt="2-c1" width="400" />  
 <br>
@@ -95,7 +87,7 @@ Gweh bilek: Ini buktinya ✋😛🤚
 ### 4. **Development Environment**
 
 #### a. **Tangkapan Layar Instalasi Library**
-(Jadinya make VM, di wsl salah install versi Ubuntu cik )
+(Menggunakan VM karena kesalahan instalasi OS pada WSL)
 
 <br>
 <img src="../src/a/4/4-a.png" alt="Instalasi Library" width="360" />  
