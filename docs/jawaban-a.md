@@ -1,102 +1,147 @@
 ## Solusi Soal A
+
 ### Ridu | 19625123 
 
+---
+
 ### 1. **Analisis Kondisi**
-my email gweh : _blom ngisi tehe_
+Email saya: _blom ngisi tehe_
+
+---
 
 ### 2. **Source Control Management**
-* a. Commands dalam git: 
-    * `git init` \
-    Menginisiasi git repository\
-    **Contoh**: `git init .`
-    * `git add`\
-    Memindahkan perubahan pada _working directory_ ke _staging area_\ 
-     **Contoh**: `git add <filename>`
-    * `git commit`\
-    Menyimpan perubahan yang ada pada project ke _local git repository history_\
-    **Contoh**: `git commit -m "Commit Message"` 
-    * `git push` \
-    Meng-_upload_ perubahan pada _local repository_ ke _remote repository_ \
-    **Contoh**: `git push`
-    * [**Referensi Git Commands**](https://git-scm.com/docs/git#_git_commands) 
-    <br>
-* b. Integrate git dan vscode dengan github
-    <br>
-<img src="../src/a/2/2-b.png" alt="Integrasi local git dan github" width="200" height="500"> 
-    <br>
-    
-* c. Min aku beneran udah kerjain kok...\
-    **Reaksi atmin**:
-    <br>
-    <img src="../src/etc/mana-bukti.png" alt="mana-buktinya" width="200"/> 
-    <br>
 
-    **Gweh bilek**: Ini buktinya ✋😛🤚 
-    <br>
-    <img src="../src/a/2/2-c1.png" alt="2-c1" width="400"/> 
-    <br>
-    <img src="../src/a/2/2-c2.png" alt="2-c2" width="400"/> 
-    <br>
+#### a. **Commands dalam Git**
+- **`git init`**  
+  Menginisiasi git repository  
+  **Contoh:** `git init .`
 
-* d.Git SSH 
-    <br>
-    <img src="../src/a/2/2-d.png" alt="2-d" width="400"/> 
+- **`git add`**  
+  Memindahkan perubahan pada _working directory_ ke _staging area_  
+  **Contoh:** `git add <filename>`
+
+- **`git commit`**  
+  Menyimpan perubahan yang ada pada project ke _local git repository history_  
+  **Contoh:** `git commit -m "Commit Message"`
+
+- **`git push`**  
+  Meng-upload perubahan dari _local repository_ ke _remote repository_  
+  **Contoh:** `git push`
+
+- [**Referensi Git Commands**](https://git-scm.com/docs/git#_git_commands)
+
+#### b. **Integrasi Git dan VSCode dengan GitHub**
+<br>
+<img src="../src/a/2/2-b.png" alt="Integrasi local git dan github" width="200" height="500" />  
+<br>
+
+#### c. **Min aku beneran udah kerjain kok...**
+**Reaksi atmin:**  
+<br>
+<img src="../src/etc/mana-bukti.png" alt="mana-buktinya" width="200" />  
+<br>
+
+**Gweh bilek:** Ini buktinya ✋😛🤚  
+<br>
+<img src="../src/a/2/2-c1.png" alt="2-c1" width="400" />  
+<br>
+<img src="../src/a/2/2-c2.png" alt="2-c2" width="400" />  
+<br>
+
+#### d. **Git SSH**
+<br>
+<img src="../src/a/2/2-d.png" alt="2-d" width="400" />  
+<br>
+
+---
 
 ### 3. **Pengenalan Ground Control Station**
-* a. Tangkapan layar utama _Mission Planer_
-    <br>
-    <img src="../src/a/3/3-a.png" alt="Layar Utama Mission Planner" width="360">
-    <br>
-* b. Main features Mission Planner:
-    * **PLAN**\
-    Fitur pembuatan mission, fence, dan rally point. \
-    **Mission** berfungsi membuat perencanaan dan eksekusi rencana penerbangan UAV, lalu **fence** adalah pembuatan area digital yang mana dapat membatasi area penerbangan UAV. Dan **rally point** berfungsi sebagai area darurat untuk UAV mendarat (copter) atau loiter (plane) ketika tidak dimungkinkannya dilakukan RTL (Return to Launch) mode. 
-    * **DATA**\
-    Menampilkan informasi visual dari vehicle.\
-    Kegunaannya memungkinkan pemantauan data teletri dari UAV ketika sedang beroperasi.
-    * **SETUP**\
-    Melakukan pengaturan UAV.\
-    Kegunaannya untuk mengatur konfigurasi (seperti kalibrasi Accel, kalibrasi Radio, Failsafe plan) dari UAV sebelum siap dioperasikan.
-    * **SIMULATION**\
-    Menjalankan SITL (Software in The Loop).\
-    Kegunaannya memungkinkan pengoperasian UAV secara virtual.
-* c. [Waypoint mission](../src/a/3/mission.waypoints)
-* [Referensi fitur Mission Planner](https://ardupilot.org/planner/docs/mission-planner-features.html)
+
+#### a. **Tangkapan Layar Utama Mission Planner**
+<br>
+<img src="../src/a/3/3-a.png" alt="Layar Utama Mission Planner" width="360" />  
+<br>
+
+#### b. **Fitur Utama Mission Planner**
+- **PLAN**  
+  Fitur untuk membuat mission, fence, dan rally point.  
+  **Mission** berfungsi untuk merencanakan dan mengeksekusi penerbangan UAV. **Fence** adalah pembuatan area pembatas untuk penerbangan UAV, sedangkan **Rally Point** adalah area darurat tempat UAV mendarat atau loiter ketika mode RTL (Return to Launch) tidak memungkinkan.
+
+- **DATA**  
+  Menampilkan informasi visual dari vehicle.  
+  Memungkinkan pemantauan data telemetri UAV saat beroperasi.
+
+- **SETUP**  
+  Pengaturan UAV, termasuk kalibrasi Accel, kalibrasi Radio, dan Failsafe plan sebelum operasional.
+
+- **SIMULATION**  
+  Menjalankan SITL (Software in The Loop) untuk operasi UAV secara virtual.
+
+#### c. **[Waypoint Mission](../src/a/3/mission.waypoints)**  
+[Referensi Fitur Mission Planner](https://ardupilot.org/planner/docs/mission-planner-features.html)
+
+---
 
 ### 4. **Development Environment**
-* a. Tangkapan layar Instalasi library
-    <br>
-    <img src="../src/a/4/4-a.png" alt="tangkapan layar instalasi lib" width="360">
-* b. NTAR AJAHHH wkwkwkkw
-  
+
+#### a. **Tangkapan Layar Instalasi Library**
+<br>
+<img src="../src/a/4/4-a.png" alt="Instalasi Library" width="360" />  
+<br>
+
+#### b. **NTAR AJAHHH wkwkwkkw**
+
+---
+
 ### 5. **Dasar-Dasar UAV**
-* a. Klasifikasi UAV
-    1. VTOL / Rotary-wing \
-    UAV jenis ini menggunakan baling-baling (rotor) sebagai penghasil gaya angkat. Rotor yang saling diagonal memiliki arah rotasi yang sama. \
-    <img src="../src/a/5/5-a1.png" width="200">
-    <br>
-    Dapat dilihat pada gambar diatas, rotor 1 dan 3 memiliki arah rotasi yang sama yaitu searah dengan jaram jam, sedangkan rotor 2 dan 4 berotasi tidak searah dengan jaram jam. Perbedaan arah rotasi ini menghasilkan total gaya dorong yang sama sehingga membuat UAV dapat terbang secara stabil. Lalu agar UAV dapat bergerak serta berotasi, gyroscope dan control unit pada UAV akan menentukan motor mana yang rotasinya ditingkatkan dan diturunkan tergantung input yang diberi dari pilot. Gambar dibawah ini merupakan contoh input dan gerak yang dihasilkan. \
-    <img src="../src/a/5/5-a2.png" width="200">
-    <br>
-    
-    2. HTOL / Fixed-wing \
-    UAV jenis ini memerlukan landasan untuk takeoff ataupun landing. Terdapat 4 gaya utama pada UAV ini, yaitu gaya angkat (lift), gaya berat, gaya hambat (drag), dan gaya dorong (thrust). Gaya angkat pada UAV ini disebabkan adanya perbedaan tekanan udara antara bagian atas dan bawah sayap (Kutta-Joukowski Theorem). Keunggulannya yaitu menggunakan lebih sedikit energi, lebih hemat, dan memiliki waktu terbang lebih lama dibanding UAV jenis VTOL.
-    3. Hybrid \
-    UAV jenis ini menggabungkan konsep fixed dan rotary-wing. Konsep rotary-wing digunakan untuk menciptakan gaya angkat, lalu setelah berada diudara digunakan konsep fixed-wing. Hal itu membuat UAV jenis ini sangat fleksibel, namun sistemnya cenderung kurang reliable dibanding fixed dan rotary wing, maintenance-nya lebih kompleks, dan massanya yang tinggi karena memiliki lebih banyak komponen.
-* b. Gerak roll, pitch, dan yaw adalah gerak rotasi benda pada 3 sumbu yang saling tegak lurus. Misal pada sumbu X,Y, dan Z. Pitch adalah gerak rotasi terhadap sumbu Y, jadi misal pada pesawat dapat digambarkan saat hidung pesawat berotasi kearah atas dan bawah. \
-    <img src="../src/a/5/5-b.png" alt="Layar Utama Mission Planner" width="200">
-    <br>
-Lalu yaw adalah gerak rotasi terhadap sumbu Z dan roll adalah gerak rotasi terhadap sumbu X. \
-Dilanjutkan dengan perbedaan airspeed dan groundspeed, groundspeed adalah kecepatan pesawat relatif terhadap permukaan bumi dan airspeed adalah kecepatan pesawat relatif terhadap udara. Groundspeed merupakan hasil penjumlahan dari airspeed dan kecepatan angin. \
-Dalam GPS (Global Positioning System) HDOP (Horizontal Dillution Of Precision) digunakan sebagai alat pengukur keakuratan GPS. Dan RSSI adalah indikator yang digunakan untuk mengukur daya/kekuatan dari sinyal radio yang diterima oleh device.
 
+#### a. **Klasifikasi UAV**
+1. **VTOL / Rotary-Wing**  
+   UAV jenis ini menggunakan rotor untuk menghasilkan gaya angkat.  
+   <img src="../src/a/5/5-a1.png" width="200" />  
+   <br>
+   Rotor 1 dan 3 berotasi searah jarum jam, sementara rotor 2 dan 4 berotasi berlawanan arah jarum jam. Ini menghasilkan gaya dorong yang seimbang sehingga UAV dapat terbang stabil.
+   
+   <img src="../src/a/5/5-a2.png" width="200" />  
+   <br>
 
+2. **HTOL / Fixed-Wing**  
+   UAV jenis ini memerlukan landasan untuk takeoff dan landing. Keunggulannya adalah hemat energi dan waktu terbang yang lebih lama dibandingkan UAV VTOL.
 
-* References: 
-  * [Types of Drone](https://www.airsight.com/knowledge-hub/drone-basics/types-of-drones-fixed-wing)
-  * [UNMANNED AERIAL VEHICLES: FUNDAMENTALS, COMPONENTS,
-MECHANICS, AND REGULATIONS](https://novapublishers.com/wp-content/uploads/2020/10/Unmanned-Aerial-Vehicles.pdf)
-   * [Pitch, yaw, and roll](https://simple.wikipedia.org/wiki/Pitch,_yaw,_and_roll)
-  * [Airspeed vs Groundspeed](https://science.howstuffworks.com/transport/flight/modern/airspeed-vs-groundspeed.htm)
-  * [Dilution of precision](https://en.wikipedia.org/wiki/Dilution_of_precision)
-  * [What is RSSI](https://www.virginmedia.com/the-edit/glossary/what-is-rssi)
+3. **Hybrid**  
+   Menggabungkan konsep fixed dan rotary-wing. Fleksibel namun lebih kompleks dalam hal pemeliharaan dan sistemnya lebih berat karena komponen tambahan.
+
+#### b. **Gerakan Roll, Pitch, dan Yaw**
+- **Pitch**: Gerak rotasi terhadap sumbu Y (misalnya, hidung pesawat bergerak naik atau turun).  
+- **Yaw**: Gerak rotasi terhadap sumbu Z.  
+- **Roll**: Gerak rotasi terhadap sumbu X.
+
+<br>
+<img src="../src/a/5/5-b.png" alt="Gerakan Roll, Pitch, Yaw" width="200" />  
+<br>
+
+**Groundspeed** adalah kecepatan relatif terhadap permukaan bumi, sementara **Airspeed** adalah kecepatan relatif terhadap udara. Groundspeed merupakan penjumlahan dari airspeed dan kecepatan angin.
+
+**HDOP** (Horizontal Dilution of Precision) digunakan untuk mengukur akurasi GPS, dan **RSSI** digunakan untuk mengukur kekuatan sinyal radio.
+
+---
+
+### 6. **Komponen dalam UAV**
+- **Chassis**: Kerangka utama yang mendukung semua komponen lainnya seperti sensor, sistem penerbangan, dan motor. Biasanya terbuat dari bahan ringan seperti karbon atau duralumin agar UAV tetap stabil.
+- **Motor dan Propeller**: Motor menggerakkan propeller untuk menghasilkan daya angkat dan dorong, memungkinkan UAV terbang.
+- **Electronic Speed Controller (ESC)**: Mengatur kecepatan dan arah putaran motor brushless.
+- **Baterai**: Menyuplai tenaga untuk motor, sensor, dan sistem kontrol UAV.
+- **Flight Controller**: Mengubah perintah input dari pengguna (seperti joystick) menjadi voltase yang dialirkan ke sistem motor UAV.
+- **Communication System**: Menggunakan frekuensi radio dua arah, seperti 2.4GHz dan 5GHz, untuk memastikan data dari sensor atau input kontrol dapat dikirim ke operator di darat.
+- **Navigation System / GNSS**: Digunakan untuk menentukan posisi UAV di dunia nyata.
+
+<br>
+<img src="../src/a/5/5-c.png" alt="Diagram Komponen UAV" width="700" height="500" />  
+<br>
+
+---
+
+### 7. **Paper UAV**
+**The Survey of Evolutionary Deep Learning-Based UAV Intelligent Power Inspection**  
+Paper ini membahas penerapan **Evolutionary Deep Learning (EDL)** dalam sistem power inspection berbasis UAV dan fokus pada deteksi objek di lingkungan yang menantang. EDL dapat meningkatkan performa dengan mengotomatisasi optimasi arsitektur jaringan dan hiperparameter. Tantangan utama yang dihadapi dalam power inspection UAV berbasis **Deep Learning konvensional** adalah deteksi objek kecil, penanganan latar belakang yang kompleks, serta keseimbangan antara kinerja real-time dengan keterbatasan sumber daya komputasi. EDL dan **Evolutionary Computation (EC)** menawarkan solusi untuk mengatasi tantangan tersebut.  
+  [Referensi Paper](https://www.mdpi.com/2504-446X/10/1/55)
