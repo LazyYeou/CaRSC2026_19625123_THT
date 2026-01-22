@@ -31,7 +31,7 @@
 #### b. **Integrasi Git dan VSCode dengan GitHub**
 
 <br>
-<img src="../src/a/2/2-b.png" alt="Integrasi local git dan github" width="200" height="500" />  
+<img src="../src/a/2/2-b.png" alt="Integrasi local git dan github" width="300" height="600" />  
 <br>
 
 #### c. **Git**
@@ -53,6 +53,12 @@ Gweh bilek: Ini buktinya ✋😛🤚
 
 <br>
 <img src="../src/a/2/2-d.png" alt="2-d" width="400" />  
+<br>
+
+#### e. **Branching**
+
+<br>
+<img src="../src/a/2/2-e.png" alt="2-d" width="300" />  
 <br>
 
 ---
