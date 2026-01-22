@@ -1,9 +1,14 @@
-## My ~~Kisah~~ Progress
+## My ~~kisah~~ Progress
 
-### Tanggal: 01-17-2026 
+#### 18-01-2026
+* Solve soal A-2
+* Solve soal A-3
 
-### Bagian A
-#### 1. **Analisis Kondisi**
-[ ] masih bingung mau milih tim KRTI mana TwT
-#### 2. **Source Control Management**
-- [x] sub soal a 
+#### 19-01-2026
+* SOlve soal A-4
+* Solve A-5
+
+#### 22-01-2026
+* Solve soal A-6 (pusing sama si kalman kalman itu T_T ) 
+* refactor dan styling markdown (malasss)
+* DONEEEEE
