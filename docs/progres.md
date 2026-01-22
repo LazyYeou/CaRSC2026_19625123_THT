@@ -11,4 +11,5 @@
 #### 22-01-2026
 * Solve soal A-6 (pusing sama si kalman kalman itu T_T ) 
 * refactor dan styling markdown (malasss)
+* DONEEEEE
 

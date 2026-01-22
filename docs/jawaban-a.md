@@ -5,7 +5,7 @@
 ---
 
 ### 1. **Analisis Kondisi**
-Email: _blom ngisi tehe_
+**Email**: ridu2504@gmail.com
 
 ---
 
@@ -28,20 +28,21 @@ Email: _blom ngisi tehe_
   Meng-upload perubahan dari _local repository_ ke _remote repository_  
   **Contoh:** `git push`
 
-- [**Referensi Git Commands**](https://git-scm.com/docs/git#_git_commands)
-
 #### b. **Integrasi Git dan VSCode dengan GitHub**
+
 <br>
 <img src="../src/a/2/2-b.png" alt="Integrasi local git dan github" width="200" height="500" />  
 <br>
 
-#### c. **Min aku beneran udah kerjain kok...**
-**Reaksi atmin:**  
+#### c. **Git**
+Gweh: Min aku beneran udah kerjain kok...
+
+Reaksi atmin:  
 <br>
 <img src="../src/etc/mana-bukti.png" alt="mana-buktinya" width="200" />  
 <br>
 
-**Gweh bilek:** Ini buktinya ✋😛🤚  
+Gweh bilek: Ini buktinya ✋😛🤚  
 <br>
 <img src="../src/a/2/2-c1.png" alt="2-c1" width="400" />  
 <br>
@@ -49,6 +50,7 @@ Email: _blom ngisi tehe_
 <br>
 
 #### d. **Git SSH**
+
 <br>
 <img src="../src/a/2/2-d.png" alt="2-d" width="400" />  
 <br>
@@ -58,11 +60,13 @@ Email: _blom ngisi tehe_
 ### 3. **Pengenalan Ground Control Station**
 
 #### a. **Tangkapan Layar Utama Mission Planner**
+
 <br>
 <img src="../src/a/3/3-a.png" alt="Layar Utama Mission Planner" width="360" />  
 <br>
 
 #### b. **Fitur Utama Mission Planner**
+
 - **PLAN**  
   Fitur untuk membuat mission, fence, dan rally point.  
   **Mission** berfungsi untuk merencanakan dan mengeksekusi penerbangan UAV. **Fence** adalah pembuatan area pembatas untuk penerbangan UAV, sedangkan **Rally Point** adalah area darurat tempat UAV mendarat atau loiter ketika mode RTL (Return to Launch) tidak memungkinkan.
@@ -77,25 +81,31 @@ Email: _blom ngisi tehe_
 - **SIMULATION**  
   Menjalankan SITL (Software in The Loop) untuk operasi UAV secara virtual.
 
+
 #### c. **[Waypoint Mission](../src/a/3/mission.waypoints)**  
-[Referensi Fitur Mission Planner](https://ardupilot.org/planner/docs/mission-planner-features.html)
 
 ---
 
 ### 4. **Development Environment**
 
 #### a. **Tangkapan Layar Instalasi Library**
+(Jadinya make VM, di wsl salah install versi Ubuntu cik )
+
 <br>
 <img src="../src/a/4/4-a.png" alt="Instalasi Library" width="360" />  
 <br>
 
-#### b. **NTAR AJAHHH wkwkwkkw**
+#### b. **System Talk-Listener**
+<br>
+<img src="../src/a/4/4-b.png" alt="Instalasi Library" width="360" />  
+<br>
 
 ---
 
 ### 5. **Dasar-Dasar UAV**
 
 #### a. **Klasifikasi UAV**
+
 1. **VTOL / Rotary-Wing**  
     UAV jenis ini menggunakan baling-baling (rotor) sebagai penghasil gaya angkat. Rotor yang saling diagonal memiliki arah rotasi yang sama.
 
@@ -144,11 +154,12 @@ Diagram komponen:
 #### d. **Paper UAV**
 **The Survey of Evolutionary Deep Learning-Based UAV Intelligent Power Inspection**  
 Paper ini membahas penerapan **Evolutionary Deep Learning (EDL)** dalam sistem power inspection berbasis UAV dan fokus pada deteksi objek di lingkungan yang menantang. EDL dapat meningkatkan performa dengan mengotomatisasi optimasi arsitektur jaringan dan hiperparameter. Tantangan utama yang dihadapi dalam power inspection UAV berbasis **Deep Learning konvensional** adalah deteksi objek kecil, penanganan latar belakang yang kompleks, serta keseimbangan antara kinerja real-time dengan keterbatasan sumber daya komputasi. EDL dan **Evolutionary Computation (EC)** menawarkan solusi untuk mengatasi tantangan tersebut.  
-[Referensi Paper](https://www.mdpi.com/2504-446X/10/1/55)
+
 
 ---
 
 ### 6. **Algoritma**
+
 ### a. Algoritma A* dan D*
 
 #### Algoritma A*
@@ -160,7 +171,7 @@ A* adalah algoritma pencarian berbasis best-first search yang mempertimbangkan b
 
 Algoritma ini secara berulang memilih node dalam open set dengan nilai f-score terkecil, mengevaluasi node tersebut, lalu menambahkannya ke dalam closed set. Kemudian, node tersebut diperluas dengan mempertimbangkan tetangga-tetangganya dan menghitung f-score mreka.
 
-#### 3.3 **Menghitung f-score**
+#### **Menghitung f-score**
 
 F-score untuk sebuah node n dihitung dengan rumus sebagai berikut:
 
@@ -177,7 +188,7 @@ $$f(n) = g(n) + h(n)$$
 
 Jika dibandingkan dengan metode navigasi lain yang banyak digunakan dalam UAV, sepert, algoritma A*, Machine Learning dan Deep Learning, algoritma D\* menunjukkan keunggulan dalam lingkungan dinamis. D\* memastikan realtime adaptation dan navigasi tanpa tabrakan. Integrasinya dengan sistem persepsi seperti LiDAR dan kamera semakin meningkatkan efektivitasnya.
  
-#### b. PID
+### b. PID
 PID adalah singkatan dari **Proportional-Integral-Derivative** yang merujuk pada algoritma pengendalian yang sering digunakan dalam sistem kontrol otomatis. PID digunakan untuk menjaga nilai output dari sistem tetap pada titik yang diinginkan (setpoint) dengan cara mengatur input ke sistem berdasarkan kesalahan (error) yang ada.
 
 PID mengkombinasikan tiga komponen utama:
@@ -199,6 +210,74 @@ Di mana:
 - $K_i$ adalah konstanta integral yng mengatur pengaruh kesalahan kumulatif
 - $K_d$ adalah konstanta derivative yang mengatur pengaruh perubahan kesalahan terhadap output
 
+### c. Kalman Filter dan Extendedn Kalman Filter
+
+### **Kalman Filter (KF)**
+
+**Kalman Filter** adalah algoritma yang digunakan untuk memperkirakan keadaan suatu sistem dinamis berdasarkan pengukuran yang mengandung noise. 
+
+Kalman Filter bekerja dengan dua langkah utama:
+
+1. **Prediksi:** Memperkirakan status sistem saat ini berdasarkan model dinamis dan estimasi keadaan sebelumnya.
+2. **Pembaruan:** Mengoreksi prediksi berdasarkan pengukuran yang diterima, dengan mempertimbangkan ketidakpastian pengukuran.
+
+Persamaan:
+
+* **Prediksi keadaan:**  
+  
+  $\hat{x}_k = A \hat{x}_{k-1} + B u_k$
+  
+  - $\hat{x}_k$ : estimasi keadaan pada waktu \(k\),
+  - $A$ : matriks transisi keadaan,
+  - $B$ : matriks kontrol,
+  - $u_k$ : input kontrol.
+
+* **Pembaruan pengukuran:**  
+
+  $\hat{x}_k = \hat{x}_k + K (z_k - H \hat{x}_k)$
+
+  Di mana:
+  - $z_k$ : pengukuran yang diterima,
+  - $H$ : matriks observasi,
+  - $K$ : matriks gainm, mengontrol seberapa besar koreksi yang harus diterapkan.
+
+### **Extended Kalman Filter (EKF)**
+
+**Extended Kalman Filter (EKF)** adalah imporovemnt dari kalman filter yang digunakan untuk mengatasi ketidaklinieran dalam model sistem atau pengukuran. Algortima EKF mengatasi masalah ini dengan meng-linearisasikan fungsi sistem dan pengukuran pada titik tertentu.
 
 
+### Aplikasi
+- Kalman Filter digunakan dalam aplikasi seperti navigasi GPS, sistem kendali pesawat, dan pemrosesan sinyal.
+- EKF banyak digunakan dalam aplikasi yang melibatkan sistem non-linier, misal robotika, sistem otonom, dan image precessing.
 
+---
+
+### Referensi:
+
+#### Git
+
+* [Git Commands](https://git-scm.com/docs/git#_git_commands)
+
+#### UAV dan GCS
+
+* [Mission Planner Features](https://ardupilot.org/planner/docs/mission-planner-features.html)
+* [UNMANNED AERIAL VEHICLES: FUNDAMENTALS, COMPONENTS, MECHANICS, AND REGULATIONS](https://novapublishers.com/wp-content/uploads/2020/10/Unmanned-Aerial-Vehicles.pdf)
+* [Motion basics: How to define roll, pitch, and yaw for linear systems](https://www.linearmotiontips.com/motion-basics-how-to-define-roll-pitch-and-yaw-for-linear-systems/)
+* [Drone VTOL vs HTOL](https://training.terra-drone.co.id/drone-vtol-vs-drone-htol/)
+* [What is RSSI? Understanding Your RSSI Level](https://www.virginmedia.com/the-edit/glossary/what-is-rssi)
+* [What is HDOP?](https://novotech.com/pages/horizontal-dilution-of-precision-hdop)
+
+#### Paper
+
+* [The Survey of Evolutionary Deep Learning-Based UAV Intelligent Power Inspection](https://www.mdpi.com/2504-446X/10/1/55)
+
+#### Algoritma
+
+* [A* Search Algorithm](https://www.geeksforgeeks.org/dsa/a-search-algorithm/)
+* [The A* Algorithm Explained](https://medium.com/@kattilaxman4/the-a-algorithm-explained-9cdbce1c8f3c)
+* [D* Algorithm](https://www.mdpi.com/2071-1050/16/17/7867)
+* [Introductory Chapter: PID-Based Industrial Process Control](https://doi.org/10.5772/intechopen.109036)
+* [Proportional Integral Derivative (PID)](https://apmonitor.com/pdc/index.php/Main/ProportionalIntegralDerivative)
+* [Kalman Filter](https://kalmanfilter.net/)
+* [Extended Kalman Filter (EKF)](https://ardupilot.org/copter/docs/common-apm-navigation-extended-kalman-filter-overview.html)
+* [Extended Kalman Filter](https://www.sciencedirect.com/topics/computer-science/extended-kalman-filter)
